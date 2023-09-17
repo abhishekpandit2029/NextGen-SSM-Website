@@ -11,14 +11,14 @@ function Navbar() {
           <Image alt="Logo" src={Logo} className="w-12 h-12" />
         </div>
         <div className="flex items-center space-x-8">
-          <Link href="#">Home</Link>
+          <Link href="home">Home</Link>
           <Link href="#">About us</Link>
           <Link href="#">Our pursuits</Link>
           <Link href="#">Prospects</Link>
           <Link href="#">Testimonials</Link>
           <Link href="#">FAQ's</Link>
           <Link href="#">Contact us</Link>
-          <Link href="#">
+          <Link href="login">
             <button className="rounded-lg border-2 py-2 px-3">SignIn</button>
           </Link>
         </div>

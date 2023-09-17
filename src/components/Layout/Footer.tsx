@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "@/components/Stuff/logo.png";
-import { Divider } from "antd";
 
 function Footer() {
   return (

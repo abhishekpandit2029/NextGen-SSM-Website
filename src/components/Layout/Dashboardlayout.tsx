@@ -10,7 +10,7 @@ function Dashboardlayout({ children }: ILayoutProps) {
     return (
         <div className="h-full flex flex-col justify-between">
             <Navbar />
-            {children}
+            <div>{children}</div>
             <Footer />
         </div>
     );
