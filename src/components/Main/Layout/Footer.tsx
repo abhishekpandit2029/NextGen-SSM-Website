@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import Logo from "@/components/Stuff/logo.png";
+import React from 'react';
+import Image from 'next/image';
+import Logo from '@/components/Stuff/logo.png';
 
 function Footer() {
   return (
@@ -179,9 +179,7 @@ function Footer() {
           </div>
 
           <div className="flex items-center space-x-8 text-gray-900">
-            <p>
-              © 2023 NextGen Software, All rights reserved.
-            </p>
+            <p>© 2023 NextGen Software, All rights reserved.</p>
             <p>Privacy Policy | Terms of Use</p>
           </div>
         </div>
