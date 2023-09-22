@@ -1,23 +1,23 @@
-'use client';
+"use client";
 
-import '@/styles/globals.css';
-import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
-import Dashboardlayout from '@/components/Main/Layout/Dashboardlayout';
+import "@/styles/globals.css";
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import Dashboardlayout from "@/components/Main/Layout/Dashboardlayout";
 
 const oppins = Poppins({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '500', '600', '700', '800', '900']
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: 'NextGen',
-  description: 'Home page of NextGen'
+  title: "NextGen",
+  description: "Home page of NextGen",
 };
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {

@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import google from '@/components/Stuff/google.svg';
-import facebook from '@/components/Stuff/facebook.svg';
-import twitter from '@/components/Stuff/twitter.svg';
-import LoginForm from '../../Form/LoginForm';
+import React from "react";
+import Image from "next/image";
+import google from "@/components/Stuff/google.svg";
+import facebook from "@/components/Stuff/facebook.svg";
+import twitter from "@/components/Stuff/twitter.svg";
+import LoginForm from "../../Form/LoginForm";
 
 export default function Login() {
   return (

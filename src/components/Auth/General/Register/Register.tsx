@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import RegisterForm from '../../Form/RegisterForm';
+import React from "react";
+import RegisterForm from "../../Form/RegisterForm";
 
 export default function Register() {
   return (

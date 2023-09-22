@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import Link from 'next/link';
+import React from "react";
+import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Link from "next/link";
 
 export default function LoginForm() {
   return (

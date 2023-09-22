@@ -1,4 +1,4 @@
-import Home from '@/components/Main/Home/Home';
+import Home from "@/components/Main/Home/Home";
 
 function Homepage() {
   return (

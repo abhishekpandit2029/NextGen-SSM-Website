@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import sm from '@/components/Stuff/sm1 (3).svg';
+import React from "react";
+import Image from "next/image";
+import sm from "@/components/Stuff/sm1 (3).svg";
 
 export default function Home() {
   return (
@@ -8,14 +8,14 @@ export default function Home() {
       <div>
         <div className="font-[900]">
           <p className="text-[4rem] text-teal-700">
-            Content <span className="text-[3rem] text-black">for</span>{' '}
+            Content <span className="text-[3rem] text-black">for</span>{" "}
           </p>
           <p className="text-[3rem]">
-            your{' '}
-            <span className="text-[3.5rem] text-teal-700">Profile&#39;s</span>{' '}
+            your{" "}
+            <span className="text-[3.5rem] text-teal-700">Profile&#39;s</span>{" "}
           </p>
           <p className="text-[3rem]">
-            crafted by{' '}
+            crafted by{" "}
             <span className="text-[3.5rem] whitespace-nowrap text-teal-700">
               Creative minds.
             </span>

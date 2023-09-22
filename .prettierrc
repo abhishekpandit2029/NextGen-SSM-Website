@@ -1,10 +1,6 @@
 {
-    "singleQuote": true,
-    "trailingComma": "none",
-    "arrowParens": "avoid",
-    "proseWrap": "preserve",
-    "quoteProps": "as-needed",
-    "bracketSameLine": false,
-    "bracketSpacing": true,
-    "tabWidth": 2
-  }
+  "endOfLine": "lf",
+  "printWidth": 80,
+  "tabWidth": 2,
+  "trailingComma": "es5"
+}

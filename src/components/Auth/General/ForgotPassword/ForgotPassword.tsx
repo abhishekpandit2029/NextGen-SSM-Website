@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React from 'react';
-import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import LockResetIcon from '@mui/icons-material/LockReset';
-import ForgotPasswordForm from '../../Form/ForgotPasswordForm';
+import React from "react";
+import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import LockResetIcon from "@mui/icons-material/LockReset";
+import ForgotPasswordForm from "../../Form/ForgotPasswordForm";
 
 export default function ForgotPassword() {
   return (
