@@ -29,19 +29,25 @@ function Navbar() {
           About us
         </Link>
         <Link
-          className={currentRoute === "/ourpursuits" ? activeStyle : nonActiveStyle}
+          className={
+            currentRoute === "/ourpursuits" ? activeStyle : nonActiveStyle
+          }
           href="#"
         >
           Our pursuits
         </Link>
         <Link
-          className={currentRoute === "/prospects" ? activeStyle : nonActiveStyle}
+          className={
+            currentRoute === "/prospects" ? activeStyle : nonActiveStyle
+          }
           href="#"
         >
           Prospects
         </Link>
         <Link
-          className={currentRoute === "/testimonials" ? activeStyle : nonActiveStyle}
+          className={
+            currentRoute === "/testimonials" ? activeStyle : nonActiveStyle
+          }
           href="#"
         >
           Testimonials
@@ -53,7 +59,9 @@ function Navbar() {
           FAQ&#39;s
         </Link>
         <Link
-          className={currentRoute === "/contactus" ? activeStyle : nonActiveStyle}
+          className={
+            currentRoute === "/contactus" ? activeStyle : nonActiveStyle
+          }
           href="#"
         >
           Contact us

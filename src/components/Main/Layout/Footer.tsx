@@ -11,24 +11,36 @@ const FooterItemsArray = [
   {
     id: "1",
     items: "Products",
-    subitems: ["Why NextGen?", "Product Updates", "Security", "Status", "Email Marketing", "Transactional Email"]
+    subitems: [
+      "Why NextGen?",
+      "Product Updates",
+      "Security",
+      "Status",
+      "Email Marketing",
+      "Transactional Email",
+    ],
   },
   {
     id: "2",
     items: "Resources",
-    subitems: ["Marketing Library", "Marketing Tools", "Marketing Glossary", "Integration Directory"]
+    subitems: [
+      "Marketing Library",
+      "Marketing Tools",
+      "Marketing Glossary",
+      "Integration Directory",
+    ],
   },
   {
     id: "3",
     items: "Community",
-    subitems: ["Agencies", "Freelancers", "Developers", "Events"]
+    subitems: ["Agencies", "Freelancers", "Developers", "Events"],
   },
   {
     id: "4",
     items: "Company",
-    subitems: ["Careers", "Newsroom", "Our Story", "Accessibility"]
+    subitems: ["Careers", "Newsroom", "Our Story", "Accessibility"],
   },
-]
+];
 
 function FooterItems() {
   return (
@@ -50,7 +62,7 @@ function FooterItems() {
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 function Footer() {
@@ -81,7 +93,7 @@ function Footer() {
         </div>
 
         <div className="flex space-x-16 text-[15px]">
-          <FooterItems/>
+          <FooterItems />
           <div className="w-[15rem] flex flex-col">
             <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase">
               Contact Us
