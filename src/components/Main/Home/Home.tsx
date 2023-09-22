@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import sm from "@/components/Stuff/sm1 (3).svg";
+import sm from "@/stuff/sm1 (3).svg";
 
 export default function Home() {
   return (

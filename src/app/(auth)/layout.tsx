@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Dashboardlayout from "@/components/Main/Layout/Dashboardlayout";
 import Image from "next/image";
-import sm from "@/components/Stuff/sm1 (4).svg";
+import sm from "@/stuff/sm1 (4).svg";
 
 const oppins = Poppins({
   subsets: ["latin"],

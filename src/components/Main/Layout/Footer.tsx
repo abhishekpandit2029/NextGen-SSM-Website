@@ -1,11 +1,57 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "@/components/Stuff/logo-removebg.png";
+import Logo from "@/stuff/logo-removebg.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+
+const FooterItemsArray = [
+  {
+    id: "1",
+    items: "Products",
+    subitems: ["Why NextGen?", "Product Updates", "Security", "Status", "Email Marketing", "Transactional Email"]
+  },
+  {
+    id: "2",
+    items: "Resources",
+    subitems: ["Marketing Library", "Marketing Tools", "Marketing Glossary", "Integration Directory"]
+  },
+  {
+    id: "3",
+    items: "Community",
+    subitems: ["Agencies", "Freelancers", "Developers", "Events"]
+  },
+  {
+    id: "4",
+    items: "Company",
+    subitems: ["Careers", "Newsroom", "Our Story", "Accessibility"]
+  },
+]
+
+function FooterItems() {
+  return (
+    <div className="flex space-x-16 text-[15px]">
+      {FooterItemsArray.map((item) => (
+        <div key={item.id}>
+          <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase">
+            {item.items}
+          </h2>
+          <ul className="text-gray-500 leading-7 dark:text-gray-400 font-medium">
+            {item.subitems.map((subitem, index) => (
+              <li key={index}>
+                <a href="#" className="hover:underline">
+                  {subitem}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 function Footer() {
   return (
@@ -35,124 +81,7 @@ function Footer() {
         </div>
 
         <div className="flex space-x-16 text-[15px]">
-          <div>
-            <h2 className="mb-4 text-md font-semibold text-gray-900 uppercase">
-              Products
-            </h2>
-            <ul className="text-gray-500 leading-7 dark:text-gray-400 font-medium">
-              <li>
-                <a href="#" className="hover:underline">
-                  Why NextGen?
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Product Updates
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Security
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Status
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Email Marketing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Transactional Email
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase">
-              Resources
-            </h2>
-            <ul className="text-gray-500 leading-7 dark:text-gray-400 font-medium">
-              <li>
-                <a href="#" className="hover:underline">
-                  Marketing Library
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Marketing Tools
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Marketing Glossary
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Integration Directory
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase">
-              Community
-            </h2>
-            <ul className="text-gray-500 leading-7 dark:text-gray-400 font-medium">
-              <li>
-                <a href="#" className="hover:underline ">
-                  Agencies
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline ">
-                  Freelancers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Developers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Events
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase">
-              Company
-            </h2>
-            <ul className="text-gray-500 leading-7 dark:text-gray-400 font-medium">
-              <li>
-                <a href="#" className="hover:underline">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Newsroom
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Our Story
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Accessibility
-                </a>
-              </li>
-            </ul>
-          </div>
+          <FooterItems/>
           <div className="w-[15rem] flex flex-col">
             <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase">
               Contact Us
@@ -164,7 +93,7 @@ function Footer() {
             <div className="flex mt-4">
               <FacebookIcon
                 style={{ fontSize: "25px" }}
-                className="hover:text-teal-700 cursor-pointer"
+                className="hover:text-teal-700 cursor-pointer mr-2"
               />
               <TwitterIcon
                 style={{ fontSize: "25px" }}
@@ -180,7 +109,7 @@ function Footer() {
               />
               <YouTubeIcon
                 style={{ fontSize: "25px" }}
-                className="hover:text-teal-700 cursor-pointer"
+                className="hover:text-teal-700 cursor-pointer ml-2"
               />
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/components/Stuff/logo-removebg.png";
+import Logo from "@/stuff/logo-removebg.png";
 import { usePathname } from "next/navigation";
 
 function Navbar() {
@@ -17,43 +17,43 @@ function Navbar() {
       </div>
       <div className="flex items-center space-x-8">
         <Link
-          className={currentRoute === "home" ? activeStyle : nonActiveStyle}
+          className={currentRoute === "/home" ? activeStyle : nonActiveStyle}
           href="home"
         >
           Home
         </Link>
         <Link
-          className={currentRoute === "" ? activeStyle : nonActiveStyle}
+          className={currentRoute === "/aboutus" ? activeStyle : nonActiveStyle}
           href="#"
         >
           About us
         </Link>
         <Link
-          className={currentRoute === "" ? activeStyle : nonActiveStyle}
+          className={currentRoute === "/ourpursuits" ? activeStyle : nonActiveStyle}
           href="#"
         >
           Our pursuits
         </Link>
         <Link
-          className={currentRoute === "" ? activeStyle : nonActiveStyle}
+          className={currentRoute === "/prospects" ? activeStyle : nonActiveStyle}
           href="#"
         >
           Prospects
         </Link>
         <Link
-          className={currentRoute === "" ? activeStyle : nonActiveStyle}
+          className={currentRoute === "/testimonials" ? activeStyle : nonActiveStyle}
           href="#"
         >
           Testimonials
         </Link>
         <Link
-          className={currentRoute === "" ? activeStyle : nonActiveStyle}
+          className={currentRoute === "/faqs" ? activeStyle : nonActiveStyle}
           href="#"
         >
           FAQ&#39;s
         </Link>
         <Link
-          className={currentRoute === "" ? activeStyle : nonActiveStyle}
+          className={currentRoute === "/contactus" ? activeStyle : nonActiveStyle}
           href="#"
         >
           Contact us
